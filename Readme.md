@@ -6,11 +6,12 @@ There are also a few issues that should be solved for an official Flatpak releas
 
 * proper desktop theme integration (I don't know if it's possible with Gtk+2 and I'm not interested in figuring that out)
 * --filesystem=host isn't needed as far as I can see, but one would have to make it work with the file dialog portal for the Flatpak sandbox
-* there are files that are included in the Flatpak that could be removed, so the final Flatpak file size could be optimized even further
+* there are files that are included in the Flatpak that could possibly be removed (e.g. p7zip's binaries), so the final Flatpak file size could be optimized even further
+* proper QA will have to be done to find what works or doesn't work (i.e. less used features that I may not be using)
 
 ## Installing from Flatpak Bundle
 
-*NB:* You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
+**NB:** You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
 
 Issue the following commands to install CherryTree for all users on your system:
 
@@ -24,7 +25,7 @@ A 32bit build of CherryTree is also available on the [releases](https://gitlab.c
 
 ## Installing from Source
 
-*NB:* You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
+**NB:** You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
 
 To build it, you will need to have Flatpak installed and the Freedesktop Platform and Sdk runtimes. To install the runtimes, issue the following command:
 
