@@ -1,14 +1,5 @@
 # Unofficial Flatpak for CherryTree
 
-Please note: I have no intention maintaining this Flatpak beyond personal use and I provide no end-user support for it, but feel free to use/fork it.
-
-There are also a few issues that should be solved for an official Flatpak release on [Flathub](https://flathub.org/):
-
-* proper desktop theme integration (I don't know if it's possible with Gtk+2 and I'm not interested in figuring that out)
-* --filesystem=host isn't needed as far as I can see, but one would have to make it work with the file dialog portal for the Flatpak sandbox
-* there are files that are included in the Flatpak that could possibly be removed (e.g. p7zip's binaries), so the final Flatpak file size could be optimized even further
-* proper QA will have to be done to find what works or doesn't work (i.e. less used features that I may not be using)
-
 ## Installing from Flatpak Bundle
 
 **NB:** You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
