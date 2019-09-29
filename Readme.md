@@ -1,9 +1,4 @@
 # Unofficial Flatpak for CherryTree
-
-## Installing from Flatpak Bundle
-
-**NB:** You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
-
 ## Installing from Source
 
 **NB:** You will need to have [set up Flathub](https://flatpak.org/setup/) to be able to install the runtimes.
