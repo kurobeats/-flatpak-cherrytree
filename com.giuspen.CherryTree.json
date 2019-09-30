@@ -1,0 +1,47 @@
+{
+    "id": "com.giuspen.CherryTree",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "cherrytree",
+    "separate-locales": false,
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--filesystem=home"
+    ],
+    "modules": [
+        "shared-modules/SDL/python-2.7.15.json",
+        {
+            "name": ""
+        },
+        "shared-modules/python2.7/gtk2.json",
+        {
+            "name": ""
+        },
+        {
+            "name": "cherrytree",
+            "buildsystem": "simple",
+            "build-commands": [],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/giuspen/cherrytree/archive/0.38.8.zip",
+                    "sha256": "b7dc54985e8579c3c2572ebf58cff9565c99d76b97d68eb495f53fe246b7ac03"
+                },
+                {
+                    "type": "file",
+                    "path": "com.giuspen.CherryTree.png"
+                },
+                {
+                    "type": "file",
+                    "path": "com.giuspen.CherryTree.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "com.giuspen.CherryTree.appdata.xml"
+                }
+            ]
+        }
+    ]
+}
