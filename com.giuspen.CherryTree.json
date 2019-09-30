@@ -10,15 +10,18 @@
         "--socket=x11",
         "--filesystem=home"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/share/aclocal",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.a",
+        "*.la"
+    ],
     "modules": [
         "shared-modules/SDL/python-2.7.15.json",
-        {
-            "name": ""
-        },
         "shared-modules/gtk2/gtk2.json",
-        {
-            "name": ""
-        },
         {
             "name": "cherrytree",
             "buildsystem": "simple",
