@@ -23,9 +23,41 @@
         "shared-modules/SDL/python-2.7.15.json",
         "shared-modules/gtk2/gtk2.json",
         {
+            "name": "pygobject",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dpython=python2 --disable-introspection"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/pygobject/2.28/pygobject-2.28.6.tar.xz",
+                    "sha256": "fb8a1d4f665130a125011659bd347c7339c944232163dbb9a34fd0686577adb8"
+                }
+                
+            ]
+        },
+        {
+            "name": "pycairo",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dpython=python2"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/pygobject/pycairo/archive/v1.18.1.zip",
+                    "sha256": "7340f8c7e164718bcc5de23d4bcff39ac81994a070edefdcdbcd1e31c9502754"
+                }
+                
+            ]
+        },
+        {
             "name": "cherrytree",
             "buildsystem": "simple",
-            "build-commands": [],
+            "build-commands": [
+                "python setup.py install --prefix=/app -f"
+            ],
             "sources": [
                 {
                     "type": "archive",
