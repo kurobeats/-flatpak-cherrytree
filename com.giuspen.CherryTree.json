@@ -15,7 +15,7 @@
         {
             "name": ""
         },
-        "shared-modules/python2.7/gtk2.json",
+        "shared-modules/gtk2/gtk2.json",
         {
             "name": ""
         },
